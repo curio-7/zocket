@@ -33,32 +33,22 @@ class Canvas extends Component {
   }
 
   drawTemplate() {
-    // const canvas = this.canvasRef.current;
-    // const ctx = canvas.getContext('2d');
-    const image = new Image();
-    const image2 = new Image();
-    const image3 = new Image();
-    image.onload = () => {
-      const canvas = this.canvasRef.current;
-      const ctx = canvas.getContext('2d');
-      ctx.drawImage(image, 0, 0); 
-    };
-    // image2.onload = () => {
-    //   ctx.drawImage(image2, 0, 0);
-    // };
-    // image3.onload = () => {
-    //   ctx.drawImage(image3, 0, 0);
-    // };
-    image2.onload = () => {
-      const canvas = this.canvasRef.current;
-      const ctx = canvas.getContext('2d');
-      ctx.drawImage(image2, 0, 0); 
-    };
-    image3.onload = () => {
-      const canvas = this.canvasRef.current;
-      const ctx = canvas.getContext('2d');
-      ctx.drawImage(image3, 0, 0); 
-    };
+    const canvas = this.canvasRef.current;
+        const ctx = canvas.getContext('2d');
+        const image=new Image()
+      const image2=new Image()
+        const image3=new Image()
+       image.onload=()=>{
+       ctx.drawImage(image, 0, 0);
+       }
+      
+        image2.onload=()=>{
+        ctx.drawImage(image2, 0, 0);
+       }   
+       
+       image3.onload=()=>{
+        ctx.drawImage(image3, 0, 0);
+       }
     image.src = 'https://d273i1jagfl543.cloudfront.net/templates/global_temp_landscape_temp_10_Design_Pattern.png';
     image2.src = 'https://d273i1jagfl543.cloudfront.net/templates/global_temp_landscape_temp_10_mask.png';
     image3.src = 'https://d273i1jagfl543.cloudfront.net/templates/global_temp_landscape_temp_10_Mask_stroke.png?random=12345';
@@ -109,9 +99,9 @@ class Canvas extends Component {
     const text_height = lines.length * 30;
     const width = text_width + 48;
     const height = text_height + 48;
-    drawRect(100, 200, width, height, 20, bgColor, ctx);
-    let starty = 200 + (height / 2 + 8);
-    const startx = 100 + 24;
+    drawRect(190, 320, width, height, 20, bgColor, ctx);
+    let starty = 320 + (height / 2 + 8);
+    const startx = 190 + 24;
     ctx.fillStyle = '#ffffff';
     lines.map(line => {
       ctx.fillText(line, startx, starty);
