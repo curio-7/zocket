@@ -1,13 +1,16 @@
 # Canvas Editor
 
 ## Description
-This project aims to create a simple canvas editor similar to Canva, allowing users to select an image, customize caption text and cta, and modify the background color of the template. 
+This project aims to create a simple canvas editor similar to Canva, allowing users to select an image, customize caption text and CTA, and modify the background color of the template. 
 The implementation utilizes vanilla HTML Canvas for the core functionality, while React (functional component) is used for managing the UI. Tailwind CSS is used for styling.
 
 ## Features
 - **Image Placement:** Users can select an image to be placed within a mask on the canvas.
 - **Text Customization:** Users can change the caption text and call-to-action using text input fields.
 - **Background Color Modification:** Users can adjust the background color of the template to suit their preferences.
+
+## Working Link
+- https://zocket-sn.vercel.app/
 
 ## Technologies Used
 - **React:** For managing the UI components and state.
